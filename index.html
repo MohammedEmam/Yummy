@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUMMY</title>
+    <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="CSS/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loading">
+      <span class="loader"></span>
+    </div>
+    <!-- itemsSction -->
+    <section class="py-5 itemsSction">
+      <div class="container">
+        <div class="row items g-4"></div>
+      </div>
+    </section>
+    <!-- sideNavMenu -->
+    <div class="sideNavMenu d-flex justify-content-between align-items-center">
+      <div class="sideOpen">
+        <div>
+          <img class="w-100" src="Images/logo.png" alt="" />
+        </div>
+        <div class="openSideNavMenu">
+          <!-- <i class="fa-2x fa-solid fa-xmark"></i> -->
+          <i class="openSideNavMenuI fa-2x fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <div class="sideNavMenu2 d-flex justify-content-between align-items-center">
+      <div class="sideLinks">
+        <div class="">
+          <ul class="list-unstyled overflow-hidden links">
+            <li class="Search">Search</li>
+            <li class="categories">Categories</li>
+            <li class="area">Area</li>
+            <li class="ingredients">Ingredients</li>
+            <li class="contactUS">Contact Us</li>
+          </ul>
+        </div>
+        <div class="text-white">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="footer">
+            <p>Copyright Â© 2019 All Rights <br />Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- detailsSction -->
+
+    <section class="detailsSction bg-black my-5">
+      <div class="container">
+        <div class="closeDetails">
+          <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="row detailsSctionRow"></div>
+      </div>
+    </section>
+
+    <!-- SearchSection -->
+    <section class="backgroundSearch searchSection mt-5">
+      <div class="container w-75">
+        <div class="d-flex justify-content-between align-items-center gap-5">
+          <input
+            class="searchByName form-control"
+            type="text"
+            placeholder="Search BY Name"
+          />
+          <input
+            class="searchByFirstLetter form-control"
+            maxlength="1"
+            type="text"
+            placeholder="Search BY First Letter"
+          />
+        </div>
+      </div>
+
+      <div class="row itemsSearch g-4 mt-3"></div>
+    </section>
+
+    <!-- ContactSection -->
+    <section class="contactSection  ">
+      <div class="contact min-vh-100 d-flex align-items-center justify-content-center " id="contact">
+        <div class="container ">
+            <form action="">
+                <div class="row g-4 w-75 mx-auto">
+                    <div class="col-md-6 col-sm-12 ">
+                        <input type="text" class="form-control name " placeholder="Enter Your Name">
+                        <div class="alert alert-danger mt-2 validname ">Enter Valid Name</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <input type="Email" class="form-control email " placeholder="Enter Your Email">
+                        <div class="alert alert-danger mt-2 validemail ">Enter Valid Email</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <input type="text" class="form-control phone" placeholder="Enter Your Phone">
+                        <div class="alert alert-danger mt-2 validphone ">Enter Valid Phone</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <input type="number" class="form-control age"  placeholder="Enter Your Age">
+                        <div class="alert alert-danger mt-2 validage " >Enter Valid Age</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <input type="password" class="form-control password"  placeholder="Enter Your Password">
+                        <div class="alert alert-danger mt-2   validpassword">Enter Valid Password</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <input type="password" class="form-control repassword"  placeholder="Repassword">
+                        <div class="alert alert-danger mt-2 validrepassword ">Enter Valid repassword</div>
+                    </div>
+    
+                    
+                   
+                </div>
+                <div class="buttonDiv">
+                <button class="btn btn-outline-danger mx-auto d-block mt-5 submit" disabled >Submit </button>
+              </div>
+    
+               
+            </form>
+        </div>
+       
+      </div>
+    </section>
+
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script type="module" src="JS/main.js"></script>
+  </body>
+</html>
